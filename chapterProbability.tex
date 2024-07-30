@@ -290,7 +290,8 @@ See (Jaynes 2003, ch 7) for a more extensive discussion of why Gaussians are so 
 
 \subsection{Student's t-distribution}
 \begin{table}
-\caption{Summary of Student's t-distribution.}
+  \caption{Summary of Student's t-distribution.}
+  \label{tab:student-t-dist} 
 \centering
 \begin{tabular}{cccccc}
 \hline\noalign{\smallskip}
@@ -300,6 +301,7 @@ $X \sim \mathcal{T}(\mu,\sigma^2,\nu)$ & $\dfrac{\Gamma(\frac{\nu+1}{2})}{\sqrt{
 \noalign{\smallskip}\hline
 \end{tabular}
 \end{table}
+Student's $t$-distribution is summarized in Table \ref{tab:student-t-dist}
 where  $\Gamma(x)$ is the gamma function:
 \begin{equation}
 \Gamma(x) \triangleq \int_0^\infty t^{x-1}e^{-t}\mathrm{d}t
@@ -323,7 +325,7 @@ As an illustration of the robustness of the Student distribution, consider Figur
 \subfloat[]{\includegraphics[scale=.70]{robustness-a.png}} \\
 \subfloat[]{\includegraphics[scale=.70]{robustness-b.png}}
 \caption{Illustration of the effect of outliers on fitting Gaussian, Student and Laplace distributions. (a) No outliers (the Gaussian and Student curves are on top of each other). (b) With outliers. We see that the Gaussian is more affected by outliers than the Student and Laplace distributions.}
-\label{fig:robustness} 
+\label{fig:robustness}
 \end{figure}
 
 If $\nu=1$, this distribution is known as the \textbf{Cauchy} or \textbf{Lorentz} distribution. This is notable for having such heavy tails that the integral that defines the mean does not converge.
